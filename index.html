@@ -1,1 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>DK SEO Solutions | Professional SEO Services</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    color:#172033;
+    background:#f8fafc;
+    line-height:1.6;
+}
+
+header{
+    background:#111827;
+    color:white;
+    padding:22px 15px;
+    text-align:center;
+}
+
+header h1{
+    font-size:28px;
+}
+
+header p{
+    color:#cbd5e1;
+}
+
+nav{
+    background:white;
+    padding:14px 8px;
+    text-align:center;
+    position:sticky;
+    top:0;
+    z-index:10;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+nav a{
+    text-decoration:none;
+    color:#172033;
+    font-weight:bold;
+    margin:0 7px;
+    font-size:14px;
+}
+
+.hero{
+    padding:75px 20px;
+    text-align:center;
+    background:linear-gradient(135deg,#eef4ff,#ffffff);
+}
+
+.badge{
+    display:inline-block;
+    background:#e0eaff;
+    color:#2563eb;
+    padding:8px 16px;
+    border-radius:30px;
+    font-size:13px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h2{
+    font-size:42px;
+    line-height:1.15;
+    margin-bottom:18px;
+}
+
+.hero h2 span{
+    color:#2563eb;
+}
+
+.hero p{
+    max-width:680px;
+    margin:auto;
+    color:#566176;
+    font-size:17px;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 22px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    margin:5px;
+}
+
+.btn-outline{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.stats{
+    margin-top:45px;
+    display:flex;
+    justify-content:center;
+    gap:45px;
+    flex-wrap:wrap;
+}
+
+.stats strong{
+    display:block;
+    font-size:24px;
+}
+
+.stats small{
+    color:#6b7280;
+}
+
+section{
+    padding:60px 20px;
+    max-width:1050px;
+    margin:auto;
+}
+
+section h2{
+    text-align:center;
+    font-size:30px;
+    margin-bottom:12px;
+}
+
+.section-text{
+    text-align:center;
+    max-width:650px;
+    margin:0 auto 35px;
+    color:#667085;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,.07);
+    border:1px solid #edf0f5;
+}
+
+.card .icon{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#667085;
+    font-size:15px;
+}
+
+.about{
+    background:white;
+    border-radius:15px;
+}
+
+.about-content{
+    max-width:750px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-content p{
+    color:#667085;
+    margin-bottom:15px;
+}
+
+.contact{
+    text-align:center;
+    background:#eef4ff;
+    border-radius:15px;
+    margin-bottom:40px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
+
+footer p{
+    color:#cbd5e1;
+    font-size:14px;
+}
+
+.whatsapp-btn{
+    position:fixed;
+    right:18px;
+    bottom:18px;
+    width:55px;
+    height:55px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 4px 12px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+@media(max-width:600px){
+
+    .hero{
+        padding:60px 18px;
+    }
+
+    .hero h2{
+        font-size:32px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .stats{
+        gap:25px;
+    }
+
+    nav a{
+        margin:0 4px;
+        font-size:13px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>DK SEO Solutions</h1>
+    <p>Professional SEO Services for Business Growth</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section class="hero" id="home">
+
+    <span class="badge">🚀 SEO Solutions for Business Growth</span>
+
+    <h2>
+        Grow Your Business with
+        <span>Powerful SEO</span>
+    </h2>
+
+    <p>
+        Improve your Google visibility, increase organic traffic,
+        and reach the right customers with practical and result-focused
+        SEO strategies.
+    </p>
+
+    <div class="buttons">
+
+        <a href="#contact" class="btn">
+            Get Free SEO Consultation
+        </a>
+
+        <a href="#services" class="btn btn-outline">
+            Explore Services
+        </a>
+
+    </div>
+
+    <div class="stats">
+
+        <div>
+            <strong>1+</strong>
+            <small>Year SEO Experience</small>
+        </div>
+
+        <div>
+            <strong>SEO</strong>
+            <small>On-Page & Off-Page</small>
+        </div>
+
+        <div>
+            <strong>100%</strong>
+            <small>Dedicated Support</small>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="services">
+
+    <h2>My SEO Services</h2>
+
+    <p class="section-text">
+        SEO solutions designed to improve search visibility,
+        organic traffic and online presence.
+    </p>
+
+    <div class="services">
+
+        <div class="card">
+            <div class="icon">🔍</div>
+            <h3>Keyword Research</h3>
+            <p>
+                Find relevant keywords to target the right
+                audience through search engines.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📄</div>
+            <h3>On-Page SEO</h3>
+            <p>
+                Optimize titles, headings, content, URLs
+                and internal links.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🔗</div>
+            <h3>Off-Page SEO</h3>
+            <p>
+                Improve online authority through quality
+                backlinks and off-page strategies.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">⚙️</div>
+            <h3>Technical SEO</h3>
+            <p>
+                Improve crawling, indexing, website structure
+                and technical performance.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📍</div>
+            <h3>Local SEO</h3>
+            <p>
+                Improve local search visibility and reach
+                customers in your target area.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>SEO Audit</h3>
+            <p>
+                Analyze your website and identify important
+                SEO issues and opportunities.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="about" class="about">
+
+    <div class="about-content">
+
+        <span class="badge">👨‍💻 About Me</span>
+
+        <h2>Helping Businesses Grow Through SEO</h2>
+
+        <p>
+            Hi, I'm <strong>Devendra Kumar</strong>, an SEO professional
+            with <strong>1+ year of practical SEO experience</strong>.
+        </p>
+
+        <p>
+            I specialize in Keyword Research, On-Page SEO,
+            Off-Page SEO, Link Building, Technical SEO and SEO Audits.
+        </p>
+
+        <p>
+            My goal is to help businesses build a stronger online presence,
+            improve organic search visibility and attract relevant traffic
+            through practical SEO strategies.
+        </p>
+
+        <a href="https://www.linkedin.com/in/devendra-kumar-a7296a375"
+           target="_blank"
+           class="btn">
+            🔗 View My LinkedIn
+        </a>
+
+    </div>
+
+</section>
+
+<section>
+
+    <h2>Why Choose DK SEO Solutions?</h2>
+
+    <p class="section-text">
+        Practical SEO strategies focused on improving website visibility,
+        organic traffic and online presence.
+    </p>
+
+    <div class="services">
+
+        <div class="card">
+            <div class="icon">🎯</div>
+            <h3>1+ Year SEO Experience</h3>
+            <p>
+                Practical experience in SEO and website optimization.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📊</div>
+            <h3>Data-Driven Approach</h3>
+            <p>
+                SEO strategies based on keyword research and website analysis.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">📈</div>
+            <h3>Organic Growth</h3>
+            <p>
+                Focused on improving search visibility and organic traffic.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🤝</div>
+            <h3>Dedicated Support</h3>
+            <p>
+                Clear communication and dedicated attention to SEO requirements.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2>Let's Grow Your Website</h2>
+
+    <p class="section-text">
+        Looking to improve your website's search visibility?
+        Let's discuss your SEO requirements.
+    </p>
+
+    <a href="https://wa.me/919509316792"
+       target="_blank"
+       class="btn">
+        💬 WhatsApp Me
+    </a>
+
+    <a href="mailto:devendrakumar98787@gmail.com"
+       class="btn btn-outline">
+        ✉️ Email Me
+    </a>
+
+</section>
+
+<footer>
+
+    <h3>DK SEO Solutions</h3>
+
+    <p>
+        © 2026 DK SEO Solutions. All Rights Reserved.
+    </p>
+
+</footer>
+
+<a href="https://wa.me/919509316792"
+   target="_blank"
+   class="whatsapp-btn">
+   💬
+</a>
+
+</body>
+</html>
