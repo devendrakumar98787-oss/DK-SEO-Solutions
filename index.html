@@ -282,16 +282,38 @@ footer p{
 .card p{
     line-height:1.7;
 }
-    /* Mobile Hamburger Menu */
+    /* Header + Logo + Hamburger */
 
 .header-top{
     display:flex;
     align-items:center;
+    justify-content:space-between;
     width:100%;
 }
 
 .brand{
-    flex:1;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    text-align:left;
+}
+
+.site-logo{
+    width:85px;
+    height:85px;
+    object-fit:contain;
+    flex-shrink:0;
+}
+
+.brand-text h1{
+    margin:0;
+    font-size:24px;
+}
+
+.brand-text p{
+    margin:0;
+    color:#cbd5e1;
+    font-size:13px;
 }
 
 .menu-btn{
@@ -316,10 +338,25 @@ header nav{
 
 @media(max-width:600px){
 
+    .site-logo{
+        width:70px;
+        height:70px;
+    }
+
+    .brand{
+        gap:8px;
+    }
+
+    .brand-text h1{
+        font-size:20px;
+    }
+
+    .brand-text p{
+        font-size:11px;
+    }
+
     .menu-btn{
         display:block;
-        order:-1;
-        margin-right:10px;
     }
 
     header nav{
@@ -344,24 +381,7 @@ header nav{
         font-size:15px;
     }
 }
-    .site-logo{
-    width:70px;
-    height:70px;
-    object-fit:contain;
-    display:block;
-    margin:0 auto 8px;
-}
-
-.brand{
-    text-align:center;
-}
-
-@media(max-width:600px){
-    .site-logo{
-        width:60px;
-        height:60px;
-    }
-}
+    
 </style>   
 
 </head>
