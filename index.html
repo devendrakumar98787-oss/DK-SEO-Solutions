@@ -287,33 +287,34 @@ footer p{
 .header-top{
     display:flex;
     align-items:center;
-    justify-content:space-between;
+    justify-content:center;
     width:100%;
+    position:relative;
 }
 
 .brand{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:14px;
     text-align:left;
 }
 
 .site-logo{
-    width:85px;
-    height:85px;
+    width:105px;
+    height:105px;
     object-fit:contain;
     flex-shrink:0;
 }
 
 .brand-text h1{
     margin:0;
-    font-size:24px;
+    font-size:26px;
 }
 
 .brand-text p{
     margin:0;
     color:#cbd5e1;
-    font-size:13px;
+    font-size:14px;
 }
 
 .menu-btn{
@@ -324,6 +325,8 @@ footer p{
     font-size:30px;
     cursor:pointer;
     padding:5px;
+    position:absolute;
+    right:5px;
 }
 
 header nav{
@@ -338,17 +341,21 @@ header nav{
 
 @media(max-width:600px){
 
-    .site-logo{
-        width:70px;
-        height:70px;
+    .header-top{
+        justify-content:center;
     }
 
     .brand{
-        gap:8px;
+        gap:10px;
+    }
+
+    .site-logo{
+        width:85px;
+        height:85px;
     }
 
     .brand-text h1{
-        font-size:20px;
+        font-size:21px;
     }
 
     .brand-text p{
@@ -357,6 +364,7 @@ header nav{
 
     .menu-btn{
         display:block;
+        right:0;
     }
 
     header nav{
