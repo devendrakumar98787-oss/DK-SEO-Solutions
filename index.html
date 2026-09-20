@@ -282,6 +282,69 @@ footer p{
 .card p{
     line-height:1.7;
 }
+    .header-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:20px;
+}
+
+.brand h1{
+    margin:0;
+}
+
+.brand p{
+    margin:5px 0 0;
+}
+
+.menu-btn{
+    display:none;
+    background:none;
+    border:none;
+    font-size:30px;
+    cursor:pointer;
+    color:#0f172a;
+}
+
+header nav{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    margin-top:20px;
+}
+
+header nav a{
+    text-decoration:none;
+    color:#0f172a;
+    font-weight:600;
+}
+
+@media (max-width:600px){
+
+    .menu-btn{
+        display:block;
+    }
+
+    header nav{
+        display:none;
+        flex-direction:column;
+        gap:0;
+        margin-top:15px;
+        background:white;
+        border-radius:10px;
+        box-shadow:0 4px 15px rgba(0,0,0,.08);
+        overflow:hidden;
+    }
+
+    header nav.active{
+        display:flex;
+    }
+
+    header nav a{
+        padding:14px 18px;
+        border-bottom:1px solid #edf0f5;
+    }
+}
 </style>   
 
 </head>
