@@ -345,6 +345,59 @@ header nav a{
         border-bottom:1px solid #edf0f5;
     }
 }
+    /* Hamburger Menu Fix */
+
+.header-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+
+.menu-btn{
+    display:none !important;
+    background:transparent !important;
+    border:none !important;
+    font-size:32px !important;
+    cursor:pointer;
+    color:#0f172a !important;
+    padding:5px 10px;
+}
+
+header nav{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    margin-top:20px;
+}
+
+@media screen and (max-width:600px){
+
+    .menu-btn{
+        display:block !important;
+    }
+
+    header nav{
+        display:none !important;
+        flex-direction:column;
+        gap:0;
+        margin-top:15px;
+        width:100%;
+        background:white;
+        border-radius:10px;
+        box-shadow:0 4px 15px rgba(0,0,0,.08);
+        overflow:hidden;
+    }
+
+    header nav.active{
+        display:flex !important;
+    }
+
+    header nav a{
+        padding:14px 18px;
+        border-bottom:1px solid #edf0f5;
+    }
+}
 </style>   
 
 </head>
